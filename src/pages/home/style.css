@@ -1,0 +1,103 @@
+main .banner{
+    height: 90vh;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 219, 121);
+    background-image: url("../../../public/assets/banner-home.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+main section .centralizer{
+    text-align: center;
+    padding: 20px 30px;
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+    text-transform: uppercase;
+}
+
+section:not(:nth-child(1)){
+    display: flex;
+}
+
+main section:not(:nth-child(1)) img{
+    width: 50%;
+    object-fit: cover;
+}
+
+main section:not(:nth-child(1)) .centralizer{
+    width: 50%;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section:not(:nth-child(1)) .centralizer h2{
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main section:not(:nth-child(1)) .centralizer span{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+main section:not(:nth-child(1)) .centralizer p{
+    padding: 0 100px;
+    line-height: 26px;
+    margin: 40px;
+}
+
+@media screen and (max-width: 1378px){
+    main section:not(:nth-child(1)) .centralizer p{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 60px;
+    }
+
+    main section:not(:nth-child(1)){
+        flex-direction: column;
+    }
+
+    main section:not(:nth-child(1)) img{
+        width: 100%;
+        height: auto;
+    }
+
+    main section:nth-child(3).events{
+        flex-direction: column-reverse;
+    }
+
+    main section:not(:nth-child(1)) .centralizer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    h1{
+        font-size: 30px;
+    }
+
+    main section:not(:nth-child(1)) .centralizer h2{
+        line-height: 40px;
+    }
+}

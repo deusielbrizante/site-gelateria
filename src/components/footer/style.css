@@ -1,0 +1,43 @@
+footer{
+    background-color: #000;
+}
+
+footer .centralizer{
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .centralizer img{
+    height: 100px;
+}
+
+footer .info{
+    width: 20%;
+}
+
+footer .info p{
+    font-size: 16px;
+}
+
+.copyright p{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    footer .centralizer{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    footer .info{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
